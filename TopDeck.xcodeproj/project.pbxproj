@@ -15,6 +15,8 @@
 		11C585351F88340F0018E20D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C585331F88340F0018E20D /* LaunchScreen.storyboard */; };
 		11C585401F88340F0018E20D /* TopDeckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5853F1F88340F0018E20D /* TopDeckTests.swift */; };
 		11C5854B1F88340F0018E20D /* TopDeckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5854A1F88340F0018E20D /* TopDeckUITests.swift */; };
+		11C585591F8834C70018E20D /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C585581F8834C70018E20D /* Deck.swift */; };
+		11C5855B1F8834CF0018E20D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5855A1F8834CF0018E20D /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		11C585461F88340F0018E20D /* TopDeckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopDeckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C5854A1F88340F0018E20D /* TopDeckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDeckUITests.swift; sourceTree = "<group>"; };
 		11C5854C1F88340F0018E20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11C585581F8834C70018E20D /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		11C5855A1F8834CF0018E20D /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				11C585311F88340F0018E20D /* Assets.xcassets */,
 				11C585331F88340F0018E20D /* LaunchScreen.storyboard */,
 				11C585361F88340F0018E20D /* Info.plist */,
+				11C585581F8834C70018E20D /* Deck.swift */,
+				11C5855A1F8834CF0018E20D /* Category.swift */,
 			);
 			path = TopDeck;
 			sourceTree = "<group>";
@@ -265,6 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C585591F8834C70018E20D /* Deck.swift in Sources */,
+				11C5855B1F8834CF0018E20D /* Category.swift in Sources */,
 				11C5852D1F88340F0018E20D /* DetailViewController.swift in Sources */,
 				11C5852B1F88340F0018E20D /* MasterViewController.swift in Sources */,
 				11C585291F88340F0018E20D /* AppDelegate.swift in Sources */,

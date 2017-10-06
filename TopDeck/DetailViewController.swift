@@ -11,13 +11,13 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
-
+    @IBOutlet weak var deckTextField: UITextField!
 
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.description
+        if let deck = detailItem {
+            if let textField = deckTextField {
+                textField.text = deck.name
             }
         }
     }
@@ -33,13 +33,16 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    var detailItem: NSDate? {
+    var detailItem: Deck? {
         didSet {
             // Update the view.
             configureView()
         }
     }
 
-
+    @IBAction func deckTextFieldEdited(_ sender: UITextField) {
+        detailItem?.name = deckTextField.text!
+    }
+    
 }
 
