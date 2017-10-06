@@ -38,7 +38,7 @@ class MasterViewController: UITableViewController {
     }
 
     func insertNewObject(_ sender: Any) {
-        decks.insert(Deck(name: "New Deck"), at: 0)
+        decks.insert(Deck(name: "New Deck\(decks.count > 0 ? " \(decks.count + 1)" : "")"), at: 0)
         let indexPath = IndexPath(row: 0, section: 0)
         tableView.insertRows(at: [indexPath], with: .automatic)
     }
