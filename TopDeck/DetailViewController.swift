@@ -41,7 +41,9 @@ class DetailViewController: UIViewController {
     }
 
     @IBAction func deckTextFieldEdited(_ sender: UITextField) {
-        detailItem?.name = deckTextField.text!
+        if !deckTextField.text!.isEmpty {
+            detailItem?.name = deckTextField.text!
+        }
     }
     
 }
