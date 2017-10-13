@@ -11,11 +11,13 @@ import UIKit
 class Category {
     var name: String
     var count: Int
+    var desired: Int
     init?(name: String, count: Int) {
         if name.isEmpty {
             return nil
         }
         self.name = name
-        self.count = 0
+        self.count = count
+        self.desired = 0
     }
 }

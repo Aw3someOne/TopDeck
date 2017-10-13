@@ -9,10 +9,12 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var deckTextField: UITextField!
+    
     var categoryTableViewController: CategoryTableViewController? = nil
+    var probabilityViewController: ProbabilityViewController? = nil
     
     func configureView() {
         // Update the user interface for the detail item.
@@ -21,7 +23,6 @@ class DetailViewController: UIViewController {
                 textField.text = deck.name
             }
         }
-        
     }
 
     override func viewDidLoad() {
@@ -48,6 +49,13 @@ class DetailViewController: UIViewController {
         }
     }
     
+    @IBAction func editCategoryButton(_ sender: UIButton) {
+        if let edit = categoryTableViewController?.tableView.isEditing {
+            sender.setTitle(edit ? "Edit" : "Done", for: UIControlState.normal)
+            categoryTableViewController?.tableView.setEditing(!edit, animated: true)
+        }
+    }
+    
     @IBAction func addCategoryButton(_ sender: UIButton) {
         if let deck = detailItem {
             deck.categories.insert(Category(name: "New Category\((detailItem?.categories.count)! > 0 ? " \((detailItem?.categories.count)! + 1)" : "")", count: 0)!, at: 0)
@@ -61,6 +69,11 @@ class DetailViewController: UIViewController {
             if let childVC = segue.destination as? CategoryTableViewController {
                 categoryTableViewController = childVC
                 categoryTableViewController?.detailItem = detailItem
+            }
+        } else if segue.identifier == "ProbabilitySegue" {
+            if let childVC = segue.destination as? ProbabilityViewController {
+                probabilityViewController = childVC
+                probabilityViewController?.detailItem = detailItem
             }
         }
     }

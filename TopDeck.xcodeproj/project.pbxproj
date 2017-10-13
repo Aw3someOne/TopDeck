@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		113D44CC1F91428700F340A4 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D44CB1F91428700F340A4 /* CategoryTableViewController.swift */; };
 		113D44CE1F914C2000F340A4 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D44CD1F914C2000F340A4 /* CategoryTableViewCell.swift */; };
+		11A391A51F9177660094D952 /* ProbabilityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A391A41F9177660094D952 /* ProbabilityTableViewController.swift */; };
+		11A391A71F9177DA0094D952 /* ProbabilityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A391A61F9177DA0094D952 /* ProbabilityTableViewCell.swift */; };
+		11A391A91F917E420094D952 /* ProbabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A391A81F917E420094D952 /* ProbabilityViewController.swift */; };
 		11C585291F88340F0018E20D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C585281F88340F0018E20D /* AppDelegate.swift */; };
 		11C5852B1F88340F0018E20D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5852A1F88340F0018E20D /* MasterViewController.swift */; };
 		11C5852D1F88340F0018E20D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5852C1F88340F0018E20D /* DetailViewController.swift */; };
@@ -41,6 +44,9 @@
 /* Begin PBXFileReference section */
 		113D44CB1F91428700F340A4 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryTableViewController.swift; path = ../CategoryTableViewController.swift; sourceTree = "<group>"; };
 		113D44CD1F914C2000F340A4 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		11A391A41F9177660094D952 /* ProbabilityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProbabilityTableViewController.swift; sourceTree = "<group>"; };
+		11A391A61F9177DA0094D952 /* ProbabilityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProbabilityTableViewCell.swift; sourceTree = "<group>"; };
+		11A391A81F917E420094D952 /* ProbabilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProbabilityViewController.swift; sourceTree = "<group>"; };
 		11C585251F88340F0018E20D /* TopDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C585281F88340F0018E20D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11C5852A1F88340F0018E20D /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -110,8 +116,11 @@
 				11C585281F88340F0018E20D /* AppDelegate.swift */,
 				11C5852A1F88340F0018E20D /* MasterViewController.swift */,
 				11C5852C1F88340F0018E20D /* DetailViewController.swift */,
+				11A391A81F917E420094D952 /* ProbabilityViewController.swift */,
 				113D44CB1F91428700F340A4 /* CategoryTableViewController.swift */,
 				113D44CD1F914C2000F340A4 /* CategoryTableViewCell.swift */,
+				11A391A41F9177660094D952 /* ProbabilityTableViewController.swift */,
+				11A391A61F9177DA0094D952 /* ProbabilityTableViewCell.swift */,
 				11C5852E1F88340F0018E20D /* Main.storyboard */,
 				11C585311F88340F0018E20D /* Assets.xcassets */,
 				11C585331F88340F0018E20D /* LaunchScreen.storyboard */,
@@ -281,9 +290,12 @@
 				11C5855B1F8834CF0018E20D /* Category.swift in Sources */,
 				11C5852D1F88340F0018E20D /* DetailViewController.swift in Sources */,
 				11C5852B1F88340F0018E20D /* MasterViewController.swift in Sources */,
+				11A391A91F917E420094D952 /* ProbabilityViewController.swift in Sources */,
 				113D44CE1F914C2000F340A4 /* CategoryTableViewCell.swift in Sources */,
 				11C585291F88340F0018E20D /* AppDelegate.swift in Sources */,
 				113D44CC1F91428700F340A4 /* CategoryTableViewController.swift in Sources */,
+				11A391A51F9177660094D952 /* ProbabilityTableViewController.swift in Sources */,
+				11A391A71F9177DA0094D952 /* ProbabilityTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

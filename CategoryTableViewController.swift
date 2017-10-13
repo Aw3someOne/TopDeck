@@ -12,7 +12,6 @@ class CategoryTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -36,7 +35,7 @@ class CategoryTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -52,6 +51,8 @@ class CategoryTableViewController: UITableViewController {
         
         let object = detailItem?.categories[indexPath.row]
         cell.categoryField.text = object?.name
+        cell.categoryCountStepper.value = Double((object?.count)!)
+        cell.categoryCountLabel.text = object?.count.description
         cell.category = object
 
         return cell
@@ -76,6 +77,14 @@ class CategoryTableViewController: UITableViewController {
         }    
     }
     */
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            detailItem?.categories.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+        }
+    }
 
     /*
     // Override to support rearranging the table view.
