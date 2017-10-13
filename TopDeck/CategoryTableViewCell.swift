@@ -10,7 +10,8 @@ import UIKit
 
 class CategoryTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var categoryField: UITextField!
+    var category: Category? = nil
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,4 +24,8 @@ class CategoryTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBAction func categoryEdited(_ sender: UITextField) {
+        category?.name = sender.text!
+    }
+    
 }

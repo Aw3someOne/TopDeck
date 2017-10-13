@@ -51,7 +51,8 @@ class CategoryTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath) as! CategoryTableViewCell
         
         let object = detailItem?.categories[indexPath.row]
-        cell.categoryLabel.text = object?.name
+        cell.categoryField.text = object?.name
+        cell.category = object
 
         return cell
     }
