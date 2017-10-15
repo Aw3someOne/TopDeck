@@ -22,6 +22,7 @@
 		11C5854B1F88340F0018E20D /* TopDeckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5854A1F88340F0018E20D /* TopDeckUITests.swift */; };
 		11C585591F8834C70018E20D /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C585581F8834C70018E20D /* Deck.swift */; };
 		11C5855B1F8834CF0018E20D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5855A1F8834CF0018E20D /* Category.swift */; };
+		DC69CE261F92E21A0057B23F /* SMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC69CE251F92E21A0057B23F /* SMP.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		11C5854C1F88340F0018E20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11C585581F8834C70018E20D /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		11C5855A1F8834CF0018E20D /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		DC69CE251F92E21A0057B23F /* SMP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				113D44CD1F914C2000F340A4 /* CategoryTableViewCell.swift */,
 				11A391A41F9177660094D952 /* ProbabilityTableViewController.swift */,
 				11A391A61F9177DA0094D952 /* ProbabilityTableViewCell.swift */,
+				DC69CE251F92E21A0057B23F /* SMP.swift */,
 				11C5852E1F88340F0018E20D /* Main.storyboard */,
 				11C585311F88340F0018E20D /* Assets.xcassets */,
 				11C585331F88340F0018E20D /* LaunchScreen.storyboard */,
@@ -289,6 +292,7 @@
 				11C585591F8834C70018E20D /* Deck.swift in Sources */,
 				11C5855B1F8834CF0018E20D /* Category.swift in Sources */,
 				11C5852D1F88340F0018E20D /* DetailViewController.swift in Sources */,
+				DC69CE261F92E21A0057B23F /* SMP.swift in Sources */,
 				11C5852B1F88340F0018E20D /* MasterViewController.swift in Sources */,
 				11A391A91F917E420094D952 /* ProbabilityViewController.swift in Sources */,
 				113D44CE1F914C2000F340A4 /* CategoryTableViewCell.swift in Sources */,
