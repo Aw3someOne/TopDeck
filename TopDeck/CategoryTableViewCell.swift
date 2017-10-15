@@ -13,13 +13,14 @@ class CategoryTableViewCell: UITableViewCell {
     @IBOutlet weak var categoryField: UITextField!
     @IBOutlet weak var categoryCountLabel: UILabel!
     @IBOutlet weak var categoryCountStepper: UIStepper!
+    var detailViewController: DetailViewController?
     
     var category: Category? = nil
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        categoryCountStepper.maximumValue = 3
+        categoryCountStepper.maximumValue = 60
         categoryCountStepper.minimumValue = 0
     }
 
@@ -37,6 +38,8 @@ class CategoryTableViewCell: UITableViewCell {
         category?.count = Int(sender.value)
         category?.desired = min((category?.count)!, (category?.desired)!)
         categoryCountLabel.text = category?.count.description
+        categoryCountLabel.sizeToFit()
+        detailViewController?.updateCardCount()
     }
     
 }

@@ -29,6 +29,7 @@ class ProbabilityTableViewCell: UITableViewCell {
     @IBAction func categoryDesiredStepperChanged(_ sender: UIStepper) {
         category?.desired = Int(sender.value)
         categoryDesired.text = "\(category?.desired.description ?? "0") of \(category?.count.description ?? "3")"
+        categoryDesired.sizeToFit()
     }
     
 }

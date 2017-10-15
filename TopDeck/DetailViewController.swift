@@ -12,6 +12,8 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var deckTextField: UITextField!
+    @IBOutlet weak var cardCount: UILabel!
+    @IBOutlet weak var probablityButton: UIButton!
     
     var categoryTableViewController: CategoryTableViewController? = nil
     var probabilityViewController: ProbabilityViewController? = nil
@@ -21,6 +23,7 @@ class DetailViewController: UIViewController {
         if let deck = detailItem {
             if let textField = deckTextField {
                 textField.text = deck.name
+                updateCardCount()
             }
         }
     }
@@ -69,6 +72,7 @@ class DetailViewController: UIViewController {
             if let childVC = segue.destination as? CategoryTableViewController {
                 categoryTableViewController = childVC
                 categoryTableViewController?.detailItem = detailItem
+                categoryTableViewController?.detailViewController = self
             }
         } else if segue.identifier == "ProbabilitySegue" {
             if let childVC = segue.destination as? ProbabilityViewController {
@@ -76,6 +80,15 @@ class DetailViewController: UIViewController {
                 probabilityViewController?.detailItem = detailItem
             }
         }
+    }
+    
+    func updateCardCount() {
+        cardCount.text = "\((detailItem?.count)!) Cards"
+        cardCount.sizeToFit()
+        let count = (detailItem?.count)!
+        let valid = (40 <= count) && (count <= 60)
+        probablityButton.isEnabled = valid
+        probablityButton.setTitle(valid ? "Probability Calculator" : "Illegal Deck Size", for: UIControlState.normal)
     }
     
 }

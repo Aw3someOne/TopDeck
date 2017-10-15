@@ -25,11 +25,7 @@ class ProbabilityTableViewController: UITableViewController {
         self.tableView.reloadData()
     }
     
-    var detailItem: Deck? {
-        didSet {
-            // Update the view.
-        }
-    }
+    var detailItem: Deck?
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

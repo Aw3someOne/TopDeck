@@ -10,6 +10,8 @@ import UIKit
 
 class CategoryTableViewController: UITableViewController {
     
+    var detailViewController: DetailViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Uncomment the following line to preserve selection between presentations
@@ -25,11 +27,7 @@ class CategoryTableViewController: UITableViewController {
         self.tableView.reloadData()
     }
 
-    var detailItem: Deck? {
-        didSet {
-            // Update the view.
-        }
-    }
+    var detailItem: Deck?
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -54,6 +52,7 @@ class CategoryTableViewController: UITableViewController {
         cell.categoryCountStepper.value = Double((object?.count)!)
         cell.categoryCountLabel.text = object?.count.description
         cell.category = object
+        cell.detailViewController = detailViewController
 
         return cell
     }

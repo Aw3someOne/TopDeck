@@ -15,4 +15,11 @@ class Deck {
         self.name = name
         self.categories = [Category]()
     }
+    var count: Int {
+        var sum = 0
+        for cat in categories {
+            sum += cat.count
+        }
+        return sum
+    }
 }

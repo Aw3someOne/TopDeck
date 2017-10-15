@@ -55,6 +55,7 @@ class ProbabilityViewController: UIViewController {
     
     @IBAction func drawStepperValueChanged(_ sender: UIStepper) {
         drawLabel.text = "Draw \(Int(sender.value).description) cards"
+        drawLabel.sizeToFit()
     }
     
     @IBAction func calculateButton(_ sender: UIButton) {
@@ -73,6 +74,9 @@ class ProbabilityViewController: UIViewController {
     
     // Binomial Distribution. combinations of n choose k
     func BiDist(n: Int, k: Int) -> BInt {
+        if n < k {
+            return 0
+        }
         return factLUT[n] / (factLUT[k] * factLUT[n - k])
     }
     
