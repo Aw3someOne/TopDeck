@@ -51,6 +51,7 @@ class CategoryTableViewController: UITableViewController {
         cell.categoryField.text = object?.name
         cell.categoryCountStepper.value = Double((object?.count)!)
         cell.categoryCountLabel.text = object?.count.description
+        cell.categoryCountLabel.sizeToFit()
         cell.category = object
         cell.detailViewController = detailViewController
 

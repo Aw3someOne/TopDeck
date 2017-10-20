@@ -48,6 +48,7 @@ class ProbabilityTableViewController: UITableViewController {
         
         cell.categoryLabel.text = object?.name
         cell.categoryDesired.text = "\(object?.desired ?? 0) of \(object?.count ?? 0)"
+        cell.categoryDesired.sizeToFit()
         cell.categoryDesiredStepper.minimumValue = 0
         cell.categoryDesiredStepper.value = Double((object?.desired)!)
         cell.categoryDesiredStepper.maximumValue = Double((object?.count)!)
