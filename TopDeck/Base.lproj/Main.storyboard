@@ -139,8 +139,8 @@
                                     <navigationItem title="Probability Calculator" id="VHw-3F-pJf"/>
                                 </items>
                             </navigationBar>
-                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mvx-zM-wpH">
-                                <rect key="frame" x="16" y="44" width="343" height="437"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvx-zM-wpH">
+                                <rect key="frame" x="16" y="64" width="343" height="424"/>
                                 <connections>
                                     <segue destination="O5u-Qb-NBu" kind="embed" identifier="ProbabililtyTableSegue" id="qBq-t5-aMz"/>
                                 </connections>
@@ -185,9 +185,13 @@
                             <constraint firstItem="zNo-Y7-f33" firstAttribute="top" secondItem="1Xl-G1-2TW" secondAttribute="bottom" constant="25" id="LMY-jj-9wc"/>
                             <constraint firstItem="dbA-ZN-D4j" firstAttribute="top" secondItem="mvx-zM-wpH" secondAttribute="bottom" constant="25" id="gGw-Ia-5NR"/>
                             <constraint firstItem="1Xl-G1-2TW" firstAttribute="centerX" secondItem="Xev-Xf-WCF" secondAttribute="centerX" id="h0t-gN-sEU"/>
+                            <constraint firstItem="mvx-zM-wpH" firstAttribute="top" secondItem="xBe-Yr-dPu" secondAttribute="bottom" id="hwE-n7-bfW"/>
+                            <constraint firstItem="mvx-zM-wpH" firstAttribute="trailing" secondItem="Xev-Xf-WCF" secondAttribute="trailingMargin" id="jh5-Vj-VbF"/>
+                            <constraint firstItem="dbA-ZN-D4j" firstAttribute="top" secondItem="mvx-zM-wpH" secondAttribute="bottom" constant="25" id="oQa-DO-9Pq"/>
                             <constraint firstItem="Ein-7V-4VV" firstAttribute="top" secondItem="dbA-ZN-D4j" secondAttribute="bottom" constant="25" id="pTT-qq-eCO"/>
                             <constraint firstItem="dbA-ZN-D4j" firstAttribute="centerX" secondItem="Xev-Xf-WCF" secondAttribute="centerX" id="uub-lv-OAI"/>
                             <constraint firstItem="Ein-7V-4VV" firstAttribute="centerX" secondItem="Xev-Xf-WCF" secondAttribute="centerX" id="z6Z-EQ-ELE"/>
+                            <constraint firstItem="mvx-zM-wpH" firstAttribute="leading" secondItem="Xev-Xf-WCF" secondAttribute="leadingMargin" id="zlA-ad-gNX"/>
                         </constraints>
                     </view>
                     <connections>
@@ -345,7 +349,7 @@
             <objects>
                 <tableViewController id="O5u-Qb-NBu" customClass="ProbabilityTableViewController" customModule="TopDeck" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="g3Y-5U-onc">
-                        <rect key="frame" x="0.0" y="0.0" width="343" height="437"/>
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="424"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -362,21 +366,21 @@
                                                 <action selector="categoryDesiredStepperChanged:" destination="py1-Np-hzv" eventType="valueChanged" id="yjv-wc-cgx"/>
                                             </connections>
                                         </stepper>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQT-la-zZs">
-                                            <rect key="frame" x="16" y="11.5" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 of 3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhS-Sx-qlX">
                                             <rect key="frame" x="188" y="11.5" width="45" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQT-la-zZs">
+                                            <rect key="frame" x="8" y="12" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="nQT-la-zZs" firstAttribute="leading" secondItem="7fu-16-iQC" secondAttribute="leadingMargin" constant="8" id="9j6-UD-yCz"/>
+                                        <constraint firstItem="nQT-la-zZs" firstAttribute="leading" secondItem="7fu-16-iQC" secondAttribute="leadingMargin" id="9j6-UD-yCz"/>
                                         <constraint firstAttribute="trailing" secondItem="aOr-C8-ljN" secondAttribute="trailing" constant="8" id="Z6C-B5-q5o"/>
                                         <constraint firstItem="OhS-Sx-qlX" firstAttribute="centerY" secondItem="7fu-16-iQC" secondAttribute="centerY" id="iec-uD-ILW"/>
                                         <constraint firstItem="nQT-la-zZs" firstAttribute="centerY" secondItem="7fu-16-iQC" secondAttribute="centerY" id="jt8-wf-Dbx"/>

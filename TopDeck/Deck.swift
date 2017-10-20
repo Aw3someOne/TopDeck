@@ -14,6 +14,7 @@ class Deck {
     init(name: String) {
         self.name = name
         self.categories = [Category]()
+        self.categories.insert(Category(name: "Placeholder", count: 40)!, at: 0)
     }
     var count: Int {
         var sum = 0
