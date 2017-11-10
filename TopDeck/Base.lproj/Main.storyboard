@@ -140,7 +140,7 @@
                                 </items>
                             </navigationBar>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvx-zM-wpH">
-                                <rect key="frame" x="16" y="64" width="343" height="424"/>
+                                <rect key="frame" x="16" y="164" width="343" height="324"/>
                                 <connections>
                                     <segue destination="O5u-Qb-NBu" kind="embed" identifier="ProbabililtyTableSegue" id="qBq-t5-aMz"/>
                                 </connections>
@@ -185,7 +185,7 @@
                             <constraint firstItem="zNo-Y7-f33" firstAttribute="top" secondItem="1Xl-G1-2TW" secondAttribute="bottom" constant="25" id="LMY-jj-9wc"/>
                             <constraint firstItem="dbA-ZN-D4j" firstAttribute="top" secondItem="mvx-zM-wpH" secondAttribute="bottom" constant="25" id="gGw-Ia-5NR"/>
                             <constraint firstItem="1Xl-G1-2TW" firstAttribute="centerX" secondItem="Xev-Xf-WCF" secondAttribute="centerX" id="h0t-gN-sEU"/>
-                            <constraint firstItem="mvx-zM-wpH" firstAttribute="top" secondItem="xBe-Yr-dPu" secondAttribute="bottom" id="hwE-n7-bfW"/>
+                            <constraint firstItem="mvx-zM-wpH" firstAttribute="top" secondItem="xBe-Yr-dPu" secondAttribute="bottom" constant="100" id="jdM-XU-VRR"/>
                             <constraint firstItem="mvx-zM-wpH" firstAttribute="trailing" secondItem="Xev-Xf-WCF" secondAttribute="trailingMargin" id="jh5-Vj-VbF"/>
                             <constraint firstItem="dbA-ZN-D4j" firstAttribute="top" secondItem="mvx-zM-wpH" secondAttribute="bottom" constant="25" id="oQa-DO-9Pq"/>
                             <constraint firstItem="Ein-7V-4VV" firstAttribute="top" secondItem="dbA-ZN-D4j" secondAttribute="bottom" constant="25" id="pTT-qq-eCO"/>
@@ -349,7 +349,7 @@
             <objects>
                 <tableViewController id="O5u-Qb-NBu" customClass="ProbabilityTableViewController" customModule="TopDeck" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="g3Y-5U-onc">
-                        <rect key="frame" x="0.0" y="0.0" width="343" height="424"/>
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="324"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
