@@ -33,6 +33,7 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         if detailItem == nil {
             self.view.isUserInteractionEnabled = false
+            self.view.isHidden = true
         }
         configureView()
     }
