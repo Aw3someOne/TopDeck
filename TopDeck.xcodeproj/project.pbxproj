@@ -128,8 +128,8 @@
 				11C585311F88340F0018E20D /* Assets.xcassets */,
 				11C585331F88340F0018E20D /* LaunchScreen.storyboard */,
 				11C585361F88340F0018E20D /* Info.plist */,
-				11C585581F8834C70018E20D /* Deck.swift */,
 				11C5855A1F8834CF0018E20D /* Category.swift */,
+				11C585581F8834C70018E20D /* Deck.swift */,
 			);
 			path = TopDeck;
 			sourceTree = "<group>";

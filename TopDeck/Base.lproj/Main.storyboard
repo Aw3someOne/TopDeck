@@ -77,7 +77,7 @@
                                 <rect key="frame" x="114" y="612" width="147" height="30"/>
                                 <state key="normal" title="Probability Calculator"/>
                                 <connections>
-                                    <segue destination="Lwd-mM-PVf" kind="showDetail" identifier="ProbabilitySegue" id="snc-YO-7NG"/>
+                                    <segue destination="Lwd-mM-PVf" kind="show" identifier="ProbabilitySegue" id="pAd-Oe-Vjm"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTD-2j-z3O">
@@ -114,6 +114,7 @@
                         <outlet property="cardCount" destination="LTD-2j-z3O" id="swh-ow-MuU"/>
                         <outlet property="deckTextField" destination="eE7-6Z-Fmr" id="9KZ-DH-Yvu"/>
                         <outlet property="probablityButton" destination="vW5-jf-v8p" id="GfX-9g-8hI"/>
+                        <segue destination="Lwd-mM-PVf" kind="show" id="eNK-lT-BaC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
@@ -140,7 +141,7 @@
                                 </items>
                             </navigationBar>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvx-zM-wpH">
-                                <rect key="frame" x="16" y="164" width="343" height="324"/>
+                                <rect key="frame" x="16" y="64" width="343" height="424"/>
                                 <connections>
                                     <segue destination="O5u-Qb-NBu" kind="embed" identifier="ProbabililtyTableSegue" id="qBq-t5-aMz"/>
                                 </connections>
@@ -182,10 +183,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1Xl-G1-2TW" firstAttribute="top" secondItem="Ein-7V-4VV" secondAttribute="bottom" constant="25" id="AZm-EB-JrN"/>
+                            <constraint firstItem="mvx-zM-wpH" firstAttribute="top" secondItem="xBe-Yr-dPu" secondAttribute="bottom" id="Glr-2G-RDM"/>
                             <constraint firstItem="zNo-Y7-f33" firstAttribute="top" secondItem="1Xl-G1-2TW" secondAttribute="bottom" constant="25" id="LMY-jj-9wc"/>
                             <constraint firstItem="dbA-ZN-D4j" firstAttribute="top" secondItem="mvx-zM-wpH" secondAttribute="bottom" constant="25" id="gGw-Ia-5NR"/>
                             <constraint firstItem="1Xl-G1-2TW" firstAttribute="centerX" secondItem="Xev-Xf-WCF" secondAttribute="centerX" id="h0t-gN-sEU"/>
-                            <constraint firstItem="mvx-zM-wpH" firstAttribute="top" secondItem="xBe-Yr-dPu" secondAttribute="bottom" constant="100" id="jdM-XU-VRR"/>
                             <constraint firstItem="mvx-zM-wpH" firstAttribute="trailing" secondItem="Xev-Xf-WCF" secondAttribute="trailingMargin" id="jh5-Vj-VbF"/>
                             <constraint firstItem="dbA-ZN-D4j" firstAttribute="top" secondItem="mvx-zM-wpH" secondAttribute="bottom" constant="25" id="oQa-DO-9Pq"/>
                             <constraint firstItem="Ein-7V-4VV" firstAttribute="top" secondItem="dbA-ZN-D4j" secondAttribute="bottom" constant="25" id="pTT-qq-eCO"/>
@@ -349,7 +350,7 @@
             <objects>
                 <tableViewController id="O5u-Qb-NBu" customClass="ProbabilityTableViewController" customModule="TopDeck" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="g3Y-5U-onc">
-                        <rect key="frame" x="0.0" y="0.0" width="343" height="324"/>
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="424"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -408,5 +409,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Tll-UG-LXB"/>
+        <segue reference="pAd-Oe-Vjm"/>
     </inferredMetricsTieBreakers>
 </document>
