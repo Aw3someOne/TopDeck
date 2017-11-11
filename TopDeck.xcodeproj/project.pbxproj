@@ -220,7 +220,7 @@
 				TargetAttributes = {
 					11C585241F88340F0018E20D = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 2BF8RPAX22;
+						DevelopmentTeam = N6RP3H788Z;
 						ProvisioningStyle = Automatic;
 					};
 					11C5853A1F88340F0018E20D = {
@@ -453,10 +453,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2BF8RPAX22;
+				DEVELOPMENT_TEAM = N6RP3H788Z;
 				INFOPLIST_FILE = TopDeck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ca.bcit.a00977201.TopDeck;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.bcit.comp4977.a00977201.TopDeck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -466,10 +466,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2BF8RPAX22;
+				DEVELOPMENT_TEAM = N6RP3H788Z;
 				INFOPLIST_FILE = TopDeck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ca.bcit.a00977201.TopDeck;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.bcit.comp4977.a00977201.TopDeck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
