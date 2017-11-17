@@ -62,14 +62,14 @@ class ProbabilityViewController: UIViewController {
         var k = [Int]()
         var K = [Int]()
         for c in (detailItem?.categories)! {
-            if c.desired > 0 {
-                K.append(c.count)
-                k.append(c.desired)
-            }
+            K.append(c.count)
+            k.append(c.desired)
         }
-        let p = NSString(format: "%.2f%%", CumulMultHyGeo(N: 40, n: Int(drawStepper.value), K: K, k: k) * 100)
+        
+        var p = CumulMultHyGeo(N: sum(a: K), n: Int(drawStepper.value), K: K, k: k) * 100
+        let pstring = NSString(format: "%.2f%%", p)
         probabilityLabel.isHidden = false
-        probabilityLabel.text = "There is a \(p) chance"
+        probabilityLabel.text = "There is a \(pstring) chance"
     }
     
     // Binomial Distribution. combinations of n choose k

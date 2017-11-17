@@ -61,7 +61,6 @@ class DetailViewController: UIViewController {
         categoryTableViewController?.view.endEditing(true)
     }
     
-    
     @IBAction func editCategoryButton(_ sender: UIButton) {
         if let edit = categoryTableViewController?.tableView.isEditing {
             sender.setTitle(edit ? "Edit" : "Done", for: UIControlState.normal)
